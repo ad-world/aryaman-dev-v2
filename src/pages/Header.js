@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import About from './About'
 import Socials from './Socials'
 import Skills from './Skills'
+import Projects from './Projects'
+
 
 export default function Header() {
     const [current, setCurrent] = useState(<About />);
@@ -40,7 +42,8 @@ export default function Header() {
                         </div>
                     </div>
                     <div class="w-full flex flex-col p-4 md:w-full lg:w-1/2">
-                        <div class="flex-1 px-5 py-6  rounded-lg shadow-lg sm:h-1/4 md:h-full bg-grey-dark hover:bg-blue-light transition duration-300">
+                        <div class="flex-1 px-5 py-6  rounded-lg shadow-lg sm:h-1/4 md:h-full bg-grey-dark hover:bg-blue-light transition duration-300"
+                        onClick={() => setCurrent(<Projects />)}>
                             <p class="text-4xl">Completed Projects</p>
                             <br></br>
                             <p class="text-xl">View a list + description of the projects that I have completed (for now!)</p>
@@ -48,11 +51,9 @@ export default function Header() {
 
                     </div>
                     <div class="w-full flex flex-col p-4 md:w-full lg:w-1/2">
-                        <a href="https://github.com/ad-world" target="_blank" rel="noreferrer" class="h-full">
+                        <a href="https://github.com/ad-world" target="_blank" rel="noreferrer" class="md:h-full h-full">
                             <div class="flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-blue-light hover:bg-blue-dark transition duration-300">
-
                                 <p class="text-4xl">Github</p>
-
                             </div>
                         </a>
                     </div>
