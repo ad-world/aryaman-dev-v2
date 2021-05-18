@@ -45,3 +45,7 @@ html {
 body {
   color: whitesmoke;
 }
+
+li {
+  cursor: pointer;
+}

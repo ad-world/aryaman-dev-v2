@@ -2,17 +2,7 @@ import React, { useState } from 'react'
 import InfoItem from '../components/InfoItem'
 
 export default function Socials() {
-
-    const python = ['Python', `Learning python was my first real programming experience. 
-    I started to learn it after a friend recommended that I check it out.
-    The first thing I built was a GPA calculator in the 9th grade.`]
-
-    const c = ['C', `I learnt the basics and some advanced concepts of C in a course at the University of Waterloo
-    titled: Elementary Algorithm Design and Data Abstraction. I had a lot of fun doing an assignment that involed
-    created a calculator for Big Ints.`]
-
     const skills = require('../info/skills.json')
-
     const tools = require('../info/tools.json')
 
 
@@ -29,7 +19,7 @@ export default function Socials() {
                         <div>
                             <p class="text-2xl">Languages</p>
                             <div class="space-y-2">
-                                <ul class="list-disc">
+                                <ul class="list-disc space-y-1">
                                     {Object.entries(skills).map((key) => {
                                         return <InfoItem
                                             name={key[0]}
@@ -43,7 +33,7 @@ export default function Socials() {
                             <br></br>
                             <p class="text-2xl">Tools</p>
                             <div class="space-y-2">
-                                <ul class="list-disc">
+                                <ul class="list-disc space-y-1">
                                     {Object.entries(tools).map((key) => {
                                         return <InfoItem
                                             name={key[0]}
