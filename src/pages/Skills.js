@@ -8,6 +8,7 @@ export default function Socials() {
 
     const [info, setInfo] = useState('Click on a skill for more info.')
     const [name, setName] = useState('');
+    const [activeItem, setActiveItem] = useState(null);
     return (
         <div class=" flex flex-wrap items-center align-middle">
             <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
@@ -26,6 +27,8 @@ export default function Socials() {
                                             info={key[1]}
                                             nameSetter={setName}
                                             infoSetter={setInfo}
+                                            activeSetter={setActiveItem}
+                                            activeItem={activeItem}
                                         />
                                     })}
                                 </ul>
@@ -40,6 +43,8 @@ export default function Socials() {
                                             info={key[1]}
                                             nameSetter={setName}
                                             infoSetter={setInfo}
+                                            activeSetter={setActiveItem}
+                                            activeItem={activeItem}
                                         />
                                     })}
                                 </ul>

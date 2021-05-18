@@ -9,6 +9,9 @@ export default function Projects() {
     const [stack, setStack] = useState(null)
     const [name, setName] = useState('');
     const [link, setLink] = useState('');
+    const [activeItem, setActiveItem] = useState(null);
+
+
     return (
         <div class=" flex flex-wrap items-center align-middle">
             <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
@@ -22,16 +25,38 @@ export default function Projects() {
                             <div class="space-y-2">
                                 <ul class="list-disc space-y-1">
                                     {Object.entries(projects).map((key) => {
-                                        return <ProjectItem
-                                            name={key[0]}
-                                            info={key[1].info}
-                                            stack={key[1].stack}
-                                            link={key[1].link}
-                                            nameSetter={setName}
-                                            infoSetter={setInfo}
-                                            stackSetter={setStack}
-                                            linkSetter={setLink}
-                                        />
+                                        if (activeItem !== name) {
+                                            return (
+                                                <ProjectItem
+                                                    name={key[0]}
+                                                    info={key[1].info}
+                                                    stack={key[1].stack}
+                                                    link={key[1].link}
+                                                    // active={activeItem === name}
+                                                    nameSetter={setName}
+                                                    infoSetter={setInfo}
+                                                    stackSetter={setStack}
+                                                    linkSetter={setLink}
+                                                    activeSetter={setActiveItem}
+                                                    activeItem={activeItem}
+                                                />
+                                            )
+                                        } else {
+                                            return (
+                                                <ProjectItem
+                                                    name={key[0]}
+                                                    info={key[1].info}
+                                                    stack={key[1].stack}
+                                                    link={key[1].link}
+                                                    nameSetter={setName}
+                                                    infoSetter={setInfo}
+                                                    stackSetter={setStack}
+                                                    linkSetter={setLink}
+                                                    activeItem={activeItem}
+                                                    activeSetter={setActiveItem}
+                                                />
+                                            )
+                                        }
                                     })}
                                 </ul>
                             </div>
@@ -51,7 +76,7 @@ export default function Projects() {
                             <br>
                             </br>
                             <div>
-                                {link && (<a href={link} target="_blank" rel="noreferrer"><img src={Link} height='20' width='20'/></a>)}
+                                {link && (<a href={link} target="_blank" rel="noreferrer"><img src={Link} height='20' width='20' /></a>)}
                             </div>
                         </div>
                     </div>
