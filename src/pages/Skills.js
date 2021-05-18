@@ -51,6 +51,7 @@ export default function Socials() {
                                             nameSetter={setName}
                                             infoSetter={setInfo}
                                         />
+                                    })}
                                 </ul>
                             </div>
                         </div>
