@@ -38,7 +38,7 @@ export default function Header() {
                     <div class="w-full flex flex-col p-4 md:w-full lg:w-1/2">
                         <div class="flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-grey-dark hover:bg-blue-light transition duration-300"
                         onClick={() => setCurrent(<Skills/>)}>
-                            <p class="text-4xl">Skills</p>
+                            <p class="text-4xl">Tech Stack</p>
                         </div>
                     </div>
                     <div class="w-full flex flex-col p-4 md:w-full lg:w-1/2">

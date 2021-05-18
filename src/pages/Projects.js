@@ -18,7 +18,6 @@ export default function Projects() {
                 <div class="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
                     <p class="text-4xl">Completed Projects</p>
                     <br></br>
-
                     <div class="grid grid-cols-2 w-full">
                         <div>
                             <p class="text-2xl">Project Names</p>
@@ -60,12 +59,29 @@ export default function Projects() {
                                     })}
                                 </ul>
                             </div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
                         </div>
                         <div class="">
                             <p class="text-2xl">Related Information</p>
                             <br></br>
                             <p class="text-xl font-semibold">{name}</p>
-                            <p class="text-xl">{info}</p>
+                            <p class="text-xl bg-grey-light rounded-lg p-2">{info}</p>
                             <br></br>
                             {stack && (<p class="text-xl font-semibold">Stack</p>)}
                             {stack && stack.map((item) => {
