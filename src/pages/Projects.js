@@ -33,7 +33,6 @@ export default function Projects() {
                                                     info={key[1].info}
                                                     stack={key[1].stack}
                                                     link={key[1].link}
-                                                    // active={activeItem === name}
                                                     nameSetter={setName}
                                                     infoSetter={setInfo}
                                                     stackSetter={setStack}

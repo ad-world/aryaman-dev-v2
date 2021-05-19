@@ -19,7 +19,7 @@ export default function Socials() {
                         setActiveItem(null);
                         setName('');
                     }}
-                    >In Progress <Emoji label="burger" symbol="🍔"/></p>
+                    >In Progress <Emoji label="though" symbol="💭"/></p>
                     <br></br>
 
                     <div class="grid lg:grid-cols-2 w-full grid-cols-1">
