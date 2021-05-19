@@ -15,7 +15,12 @@ export default function Socials() {
         <div class=" flex flex-wrap items-center align-middle">
             <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
                 <div class="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
-                    <p class="text-4xl">Tech Stack <Emoji label="burger" symbol="🍔"/></p>
+                    <p class="text-4xl"
+                        onClick={() => {
+                            setInfo('Click on a skill for more info.')
+                            setName('');
+                            setActiveItem(null);
+                        }}>Tech Stack <Emoji label="burger" symbol="🍔" /></p>
                     <br></br>
 
                     <div class="grid lg:grid-cols-2 w-full grid-cols-1">
@@ -52,7 +57,7 @@ export default function Socials() {
                                 </ul>
                             </div>
                         </div>
-                        <SkillProgressComp name={name} info={info}/>
+                        <SkillProgressComp name={name} info={info} />
                     </div>
                 </div>
             </div>
