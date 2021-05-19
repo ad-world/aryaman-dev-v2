@@ -46,7 +46,7 @@ body {
   color: whitesmoke;
 }
 
-li {
+.nice-cursor:hover, li {
   cursor: pointer;
 }
 
