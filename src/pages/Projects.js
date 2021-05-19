@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import ProjectItem from '../components/ProjectItem'
 import Link from '../img/link.svg'
+import Emoji from '../components/Emoji'
+
 
 export default function Projects() {
     const projects = require('../info/projects.json')
@@ -16,9 +18,9 @@ export default function Projects() {
         <div class=" flex flex-wrap items-center align-middle">
             <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
                 <div class="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
-                    <p class="text-4xl">Completed Projects</p>
+                    <p class="text-4xl">Completed Projects <Emoji label="complete" symbol="✅"/></p>
                     <br></br>
-                    <div class="grid grid-cols-2 w-full">
+                    <div class="grid lg:grid-cols-2 w-full grid-cols-1">
                         <div>
                             <p class="text-2xl">Project Names</p>
                             <div class="space-y-2">
@@ -61,23 +63,8 @@ export default function Projects() {
                             </div>
                             <br></br>
                             <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
                         </div>
-                        <div class="">
+                        <div class="py-4 lg:py-0 w-5/6 mx-auto">
                             <p class="text-2xl">Related Information</p>
                             <br></br>
                             <p class="text-xl font-semibold">{name}</p>
