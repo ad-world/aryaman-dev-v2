@@ -57,14 +57,14 @@ export default function Header() {
                     </div>
                     <div class="w-full flex flex-col p-4 w-full xl:w-1/2 nice-cursor">
                         <a href="https://github.com/ad-world" target="_blank" rel="noreferrer" class="h-full">
-                            <div class="flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-blue-light hover:bg-blue-dark transition duration-300">
+                            <div class="flex-1 px-5 py-6 rounded-lg shadow-lg h-full bg-blue-light hover:bg-blue-dark transition duration-300">
                                 <p class="text-4xl">Github</p>
                             </div>
                         </a>
                     </div>
                     <div class="w-full flex flex-col p-4 w-full xl:w-1/2 nice-cursor">
-                        <a href={Resume} target="_blank" rel="noreferrer" class="h-full">
-                            <div class="flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-blue-light hover:bg-blue-dark transition duration-300">
+                        <a href={Resume} target="_blank" rel="noreferrer" class="">
+                            <div class="flex-1 px-5 py-6 rounded-lg shadow-lg h-full bg-blue-light hover:bg-blue-dark transition duration-300">
                                 <p class="text-4xl">Resume</p>
                             </div>
                         </a>
