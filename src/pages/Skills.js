@@ -12,10 +12,10 @@ export default function Socials() {
     const [name, setName] = useState('');
     const [activeItem, setActiveItem] = useState(null);
     return (
-        <div class=" flex flex-wrap items-start xl:items-center align-middle">
-            <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
-                <div class="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
-                    <p class="text-4xl"
+        <div className=" flex flex-wrap items-start xl:items-center align-middle">
+            <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
+                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
+                    <p className="text-4xl"
                         onClick={() => {
                             setInfo('Click on a skill for more info.')
                             setName('');
@@ -23,11 +23,11 @@ export default function Socials() {
                         }}>Tech Stack <Emoji label="burger" symbol="🍔" /></p>
                     <br></br>
 
-                    <div class="grid lg:grid-cols-2 w-full grid-cols-1">
+                    <div className="grid lg:grid-cols-2 w-full grid-cols-1">
                         <div>
-                            <p class="text-2xl">Languages</p>
-                            <div class="space-y-2">
-                                <ul class="list-disc space-y-1">
+                            <p className="text-2xl">Languages</p>
+                            <div className="space-y-2">
+                                <ul className="list-disc space-y-1">
                                     {Object.entries(skills).map((key) => {
                                         return <InfoItem
                                             name={key[0]}
@@ -41,9 +41,9 @@ export default function Socials() {
                                 </ul>
                             </div>
                             <br></br>
-                            <p class="text-2xl">Tools</p>
-                            <div class="space-y-2">
-                                <ul class="list-disc space-y-1">
+                            <p className="text-2xl">Tools</p>
+                            <div className="space-y-2">
+                                <ul className="list-disc space-y-1">
                                     {Object.entries(tools).map((key) => {
                                         return <InfoItem
                                             name={key[0]}

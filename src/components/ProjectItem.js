@@ -4,7 +4,7 @@ export default function ProjectItem({ name, stack, info, link, nameSetter, stack
 
     if (activeItem === name) {
         return (
-            <li class="text-xl list-inside bg-grey-light mx-2 px-2 rounded-lg" onClick={() => {
+            <li className="text-xl list-inside bg-grey-light mx-2 px-2 rounded-lg" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 stackSetter(stack)
@@ -17,7 +17,7 @@ export default function ProjectItem({ name, stack, info, link, nameSetter, stack
         )
     } else {
         return (
-            <li class="text-xl list-inside hover:underline" onClick={() => {
+            <li className="text-xl list-inside hover:underline" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 stackSetter(stack)

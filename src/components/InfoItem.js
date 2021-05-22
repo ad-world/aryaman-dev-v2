@@ -4,7 +4,7 @@ export default function InfoItem({ name, info, nameSetter, infoSetter, activeSet
 
     if (activeItem === name) {
         return (
-            <li class="text-xl list-inside bg-grey-light mx-2 px-2 rounded-lg" onClick={() => {
+            <li className="text-xl list-inside bg-grey-light mx-2 px-2 rounded-lg" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 activeSetter(name)
@@ -15,7 +15,7 @@ export default function InfoItem({ name, info, nameSetter, infoSetter, activeSet
         )
     } else {
         return (
-            <li class="text-xl list-inside hover:underline" onClick={() => {
+            <li className="text-xl list-inside hover:underline" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 activeSetter(name)

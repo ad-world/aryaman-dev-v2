@@ -15,10 +15,10 @@ export default function Projects() {
 
 
     return (
-        <div class=" flex flex-wrap items-start xl:items-center align-middle">
-            <div class="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
-                <div class="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
-                    <p class="text-4xl"
+        <div className=" flex flex-wrap items-start xl:items-center align-middle">
+            <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
+                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
+                    <p className="text-4xl"
                         onClick={() => {
                             setInfo('Click on a project for more info.');
                             setStack(null)
@@ -28,11 +28,11 @@ export default function Projects() {
                         }}>
                         Completed Projects <Emoji label="complete" symbol="✅" /></p>
                     <br></br>
-                    <div class="grid lg:grid-cols-2 w-full grid-cols-1">
+                    <div className="grid lg:grid-cols-2 w-full grid-cols-1">
                         <div>
-                            <p class="text-2xl">Project Names</p>
-                            <div class="space-y-2">
-                                <ul class="list-disc space-y-1">
+                            <p className="text-2xl">Project Names</p>
+                            <div className="space-y-2">
+                                <ul className="list-disc space-y-1">
                                     {Object.entries(projects).map((key) => {
                                         if (activeItem !== name) {
                                             return (
@@ -71,16 +71,16 @@ export default function Projects() {
                             <br></br>
                             <br></br>
                         </div>
-                        <div class="py-4 lg:py-0 w-5/6 mx-auto">
-                            <p class="text-2xl">Related Information</p>
+                        <div className="py-4 lg:py-0 w-5/6 mx-auto">
+                            <p className="text-2xl">Related Information</p>
                             <br></br>
-                            <p class="text-xl font-semibold">{name}</p>
-                            <p class="text-xl bg-grey-light rounded-lg p-2">{info}</p>
+                            <p className="text-xl font-semibold">{name}</p>
+                            <p className="text-xl bg-grey-light rounded-lg p-2">{info}</p>
                             <br></br>
-                            {stack && (<p class="text-xl font-semibold">Stack</p>)}
+                            {stack && (<p className="text-xl font-semibold">Stack</p>)}
                             {stack && stack.map((item) => {
                                 return (
-                                    <li class="text-xl list-inside">{item}</li>
+                                    <li className="text-xl list-inside">{item}</li>
                                 )
                             })}
                             <br>
