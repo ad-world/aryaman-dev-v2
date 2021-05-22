@@ -12,8 +12,8 @@ import Resume from './Aryaman_Dhingra_Resume.pdf'
 export default function Header() {
     const [current, setCurrent] = useState(<About />);
     return (
-        <div class="md:grid md:grid-cols-2 lg:divide-x md:divide-y-8 divide-none visible">
-            <div class="w-3/4 mx-auto px-4 flex items-center lg:h-screen md:h-auto">
+        <div class="grid md:grid-cols-2 lg:divide-x divide-y-8 divide-none h-full visible">
+            <div class="w-3/4 mx-auto px-4 flex items-center h-auto">
                 <div class="-mx-4 flex flex-wrap">
                     <div class="w-full flex flex-col p-4 w-full nice-cursor">
                         <div class="flex-1 px-5 py-6 rounded-lg shadow-lg h-1/4 md:h-1/4 bg-grey-dark object-contain hover:bg-blue-light transition duration-300"
