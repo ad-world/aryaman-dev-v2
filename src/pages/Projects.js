@@ -72,8 +72,6 @@ export default function Projects() {
                             <br></br>
                         </div>
                         <div className="py-4 lg:py-0 w-5/6 mx-auto">
-                            <p className="text-2xl">Related Information</p>
-                            <br></br>
                             <p className="text-xl font-semibold">{name}</p>
                             <p className="text-xl bg-grey-light rounded-lg p-2">{info}</p>
                             <br></br>
