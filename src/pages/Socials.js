@@ -27,7 +27,7 @@ export default function Socials() {
                             </a>
                         </div>
                         <div class="w-1/2 h-1/2 mx-auto align-middle">
-                            <a href="https://github.com/ad-world" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/ad-world/" target="_blank" rel="noreferrer">
                                 <img src={Linkedin} class="w-full h-full" alt="linkedin"/>
                             </a>
                         </div>
