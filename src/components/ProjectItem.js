@@ -4,7 +4,7 @@ export default function ProjectItem({ name, stack, info, link, nameSetter, stack
 
     if (activeItem === name) {
         return (
-            <li className="text-xl list-inside bg-grey-light px-2 rounded-lg" onClick={() => {
+            <li className="text-xl list-inside bg-sky-dark dark:bg-grey-light px-2 rounded-lg" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 stackSetter(stack)
