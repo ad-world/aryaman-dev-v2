@@ -4,7 +4,7 @@ export default function InfoItem({ name, info, nameSetter, infoSetter, activeSet
 
     if (activeItem === name) {
         return (
-            <li className="text-xl list-inside bg-grey-light mx-2 px-2 rounded-lg" onClick={() => {
+            <li className="text-xl list-inside bg-grey-light px-2 rounded-lg" onClick={() => {
                 infoSetter(info)
                 nameSetter(name)
                 activeSetter(name)

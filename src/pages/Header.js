@@ -11,6 +11,7 @@ import Resume from './Aryaman_Dhingra_Resume.pdf'
 
 export default function Header() {
     const [current, setCurrent] = useState(<About />);
+    // const [dark, setDark] = useState('');
     return (
         <div className="grid md:grid-cols-2 lg:divide-x divide-y-8 divide-none h-full visible">
             <div className="w-3/4 mx-auto px-4 flex items-center h-auto">
