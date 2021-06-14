@@ -4,7 +4,7 @@ import Emoji from '../components/Emoji'
 import InfoItem from '../components/InfoItem'
 import SkillProgressComp from '../components/SkillProgressComp'
 
-export default function Socials() {
+export default function Progress() {
     const progress = require('../info/progress.json')
     
     const [info, setInfo] = useState('Click on an item for more info.')
@@ -13,7 +13,7 @@ export default function Socials() {
     return (
         <div className=" flex flex-wrap items-start xl:items-center align-middle">
             <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
-                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
+                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-sky-light dark:bg-grey-dark object-contain">
                     <p className="text-4xl" onClick={() => {
                         setInfo('Click on an item for more info');
                         setActiveItem(null);

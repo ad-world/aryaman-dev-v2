@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,16 +36,18 @@
   }
 }
 
-html {
-  background-color: #353941;
-}
-
-
-body {
-  color: whitesmoke;
-}
 
 .nice-cursor:hover, li {
   cursor: pointer;
 }
+
+
+.toggle-color.react-toggle .react-toggle-track {
+  background-color: #000000;
+}
+
+.toggle-color.react-toggle--checked .react-toggle-track {
+  background-color: #000000;
+}
+
 

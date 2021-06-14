@@ -17,7 +17,7 @@ export default function Projects() {
     return (
         <div className=" flex flex-wrap items-start xl:items-center align-middle">
             <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
-                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-grey-dark object-contain">
+                <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-sky-light dark:bg-grey-dark object-contain">
                     <p className="text-4xl"
                         onClick={() => {
                             setInfo('Click on a project for more info.');
@@ -73,7 +73,7 @@ export default function Projects() {
                         </div>
                         <div className="py-4 lg:py-0 w-5/6 mx-auto">
                             <p className="text-xl font-semibold">{name}</p>
-                            <p className="text-xl bg-grey-light rounded-lg p-2">{info}</p>
+                            <p className="text-xl bg-white dark:bg-grey-light rounded-lg p-2">{info}</p>
                             <br></br>
                             {stack && (<p className="text-xl font-semibold">Stack</p>)}
                             {stack && stack.map((item) => {
