@@ -12,7 +12,7 @@ import DarkMode from '../components/DarkModeToggle'
 export default function Header() {
     const [current, setCurrent] = useState(<About />);
     return (
-        <div class='h-screen'>
+        <div className='h-screen'>
             <div className="h-0 bg-white dark:bg-grey-light flex justify-center">
                 <div className='justify-center items-center p-4'>
                     <DarkMode/>
