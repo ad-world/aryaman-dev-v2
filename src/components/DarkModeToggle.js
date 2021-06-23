@@ -4,7 +4,7 @@ import Sun from '../img/sun.png'
 import Moon from '../img/moon.png'
 
 export default function DarkMode () {
-	const [ isDark, setIsDark ] = useState(true ? localStorage.getItem('theme') === 'dark' : false);
+	const [ isDark, setIsDark ] = useState(localStorage.getItem('theme') === 'dark' ?  true : false);
 
 	const darkMode = () => {
 		const theme = localStorage.getItem('theme');
