@@ -15,7 +15,7 @@ export default function Projects() {
 
 
     return (
-        <div className=" flex flex-wrap items-start items-center align-middle">
+        <div className=" flex flex-wrap items-start items-center align-middle transition duration-300">
             <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
                 <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-1/4 bg-sky-light dark:bg-grey-dark object-contain">
                     <p className="text-4xl"

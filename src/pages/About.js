@@ -4,7 +4,7 @@ import Emoji from '../components/Emoji'
 
 export default function About() {
     return (
-        <div className=" flex flex-wrap items-start items-center align-middle">
+        <div className=" flex flex-wrap items-start items-center align-middle transition duration-300">
             <div className="w-full flex flex-col p-4 sm:w-full lg:w-full justify-center content-center align-middle">
                 <div className="md:w-3/4 sm:w-full flex-1 px-5 py-6 rounded-lg shadow-lg h-1/4 bg-sky-light dark:bg-grey-dark object-contain">
                     <p className="text-4xl">A little bit about me <Emoji label="about" symbol="🙋‍♂️" /></p>

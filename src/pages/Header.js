@@ -12,7 +12,7 @@ import DarkMode from '../components/DarkModeToggle';
 export default function Header () {
 	const [ current, setCurrent ] = useState(<About />);
 	return (
-		<div>
+		<div className="transition duration-300">
             <div className="h-0 items-center">
                 <div className='w-full justify-center items-center p-4'>
                     <DarkMode/>
