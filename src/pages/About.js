@@ -12,7 +12,7 @@ export default function About() {
                         <p className="text-xl">I'm a Computer Science student at the University of Waterloo.</p>
                         <p className="text-xl">I will be going into my second year in Fall 2021.</p>
                         <br></br>
-                        <p className="text-xl">I was born in raised in the United Arab Emirates!</p>
+                        <p className="text-xl">I was born and raised in the United Arab Emirates!</p>
                         <br></br>
                         <p className="text-xl">
                             I chose computer science because logic and objectivity have always been extremely appealing to me,
