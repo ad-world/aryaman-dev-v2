@@ -54,15 +54,21 @@ export default function Header () {
 									className="text-black dark:text-white flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-sky-light dark:bg-grey-dark hover:bg-sky-dark dark:hover:bg-blue-light transition duration-300"
 									onClick={() => setCurrent(<Progress />)}
 								>
-									<p className="text-4xl">Experiences</p>
+									<p className="text-4xl">In Progress</p>
 								</div>
 							</div>
 							<div className="w-full flex flex-col p-4 w-full xl:w-1/2 nice-cursor">
 								<div
-									className="text-black dark:text-white flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-sky-light dark:bg-grey-dark hover:bg-sky-dark dark:hover:bg-blue-light transition duration-300"
+									className="mb-4 text-black dark:text-white flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-sky-light dark:bg-grey-dark hover:bg-sky-dark dark:hover:bg-blue-light transition duration-300"
 									onClick={() => setCurrent(<Skills />)}
 								>
 									<p className="text-4xl">Tech Stack</p>
+								</div>
+								<div
+									className="mt-5 text-black dark:text-white flex-1 px-5 py-6 rounded-lg shadow-lg sm:h-1/4 md:h-full bg-sky-light dark:bg-grey-dark hover:bg-sky-dark dark:hover:bg-blue-light transition duration-300"
+									onClick={() => setCurrent(<Skills />)}
+								>
+									<p className="text-4xl">Experiences</p>
 								</div>
 							</div>
 							<div className="w-full flex flex-col p-4 w-full xl:w-1/2 nice-cursor">
